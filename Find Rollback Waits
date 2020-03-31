@@ -1,0 +1,1 @@
+select session_id, percent_complete , last_wait_type , wait_resource, wait_time, wait_type  from sys.dm_exec_requests where status = ’rollback’
